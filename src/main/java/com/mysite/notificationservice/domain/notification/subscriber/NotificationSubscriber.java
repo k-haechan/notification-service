@@ -10,17 +10,6 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
 import com.mysite.notificationservice.domain.sse.SseEmitterManager;
 
-/**
- * PackageName : com.mysite.notificationservice.domain.notification.subscriber
- * FileName    : NotificationSubscriber
- * Author      : hc
- * Date        : 25. 4. 28.
- * Description : 
- * =====================================================================================================================
- * DATE          AUTHOR               NOTE
- * ---------------------------------------------------------------------------------------------------------------------
- * 25. 4. 28.     hc               Initial creation
- */
 @Component
 public class NotificationSubscriber implements MessageListener {
 

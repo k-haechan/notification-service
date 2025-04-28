@@ -6,17 +6,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 
-/**
- * PackageName : com.mysite.notificationservice.domain.sse
- * FileName    : SseEmitterManager
- * Author      : hc
- * Date        : 25. 4. 27.
- * Description : 
- * =====================================================================================================================
- * DATE          AUTHOR               NOTE
- * ---------------------------------------------------------------------------------------------------------------------
- * 25. 4. 27.     hc               Initial creation
- */
 @Component
 public class SseEmitterManager {
 

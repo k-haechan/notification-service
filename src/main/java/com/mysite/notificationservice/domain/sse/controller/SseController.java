@@ -16,17 +16,6 @@ import org.springframework.web.servlet.mvc.method.annotation.SseEmitter;
 import com.mysite.notificationservice.domain.sse.SseEmitterManager;
 import com.mysite.notificationservice.domain.sse.controller.dto.NotificationRequest;
 
-/**
- * PackageName : com.mysite.notificationservice.domain.notification.controller
- * FileName    : SseController
- * Author      : hc
- * Date        : 25. 4. 28.
- * Description : 
- * =====================================================================================================================
- * DATE          AUTHOR               NOTE
- * ---------------------------------------------------------------------------------------------------------------------
- * 25. 4. 28.     hc               Initial creation
- */
 @RestController
 public class SseController {
 
