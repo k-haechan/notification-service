@@ -24,7 +24,7 @@ public class SseEmitterManager {
 	private final Map<String, SseEmitter> emitterMap = new ConcurrentHashMap<>();
 
 	// 사용자별 SseEmitter를 추가하는 메서드
-	public SseEmitter createEmitter(String userId) {
+	private SseEmitter createEmitter(String userId) {
 		SseEmitter emitter = new SseEmitter(60_000L);  // 타임아웃 60초
 
 		// 타임아웃이나 연결 종료 시 Emitter 제거
@@ -43,5 +43,10 @@ public class SseEmitterManager {
 	// 사용자별 SseEmitter 가져오기
 	public SseEmitter getEmitter(String userId) {
 		return emitterMap.get(userId);
+	}
+
+	// 클라이언트의 SSE 구독 요청 처리 메서드
+	public SseEmitter subscribe(String userId) {
+		return createEmitter(userId);
 	}
 }
