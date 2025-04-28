@@ -4,17 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.stereotype.Component;
 
-/**
- * PackageName : com.mysite.notificationservice.domain.notification.publisher
- * FileName    : NotificationPublisher
- * Author      : hc
- * Date        : 25. 4. 28.
- * Description : 
- * =====================================================================================================================
- * DATE          AUTHOR               NOTE
- * ---------------------------------------------------------------------------------------------------------------------
- * 25. 4. 28.     hc               Initial creation
- */
 @Component
 public class NotificationPublisher {
 
